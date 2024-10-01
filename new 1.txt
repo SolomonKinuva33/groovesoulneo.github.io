@@ -1,0 +1,133 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    z-index: 10;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0db4f; /* You can adjust to any hover color */
+}
+
+section {
+    padding-top: 60px; /* Ensure content isn't hidden behind sticky header */
+}
+
+/* First background - landing page */
+.hero {
+    background: url('path_to_first_image.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .content h1 {
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero .content p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Second background - About section */
+.about {
+    background: url('path_to_second_image.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about .content h2 {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about .content p {
+    font-size: 1.2em;
+}
+
+/* Playlist Section */
+.playlist {
+    background-color: #222; /* Dark background for contrast */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.playlist iframe {
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer a {
+    color: #f0db4f;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* For headings */
+h1, h2 {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover, h2:hover {
+    color: #f0db4f; /* Change color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
